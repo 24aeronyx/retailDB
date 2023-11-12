@@ -30,9 +30,11 @@ CREATE TABLE customer(
 -- buat tabel orders
 CREATE TABLE orders(
     id INT(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    customer_id INT(11) NOT NULL,
     status ENUM('paid', 'unpaid') NOT NULL,
     total INT(11) NOT NULL,
-    date DATE DEFAULT CURRENT_TIMESTAMP
+    date DATE DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (customer_id) REFERENCES customer(id)
 );
 
 -- Buat table order_details

@@ -61,11 +61,11 @@ INSERT INTO customer (name, address, email, contact) VALUES
 ('Isabella Hall', '456 Oak Avenue, Townsville', 'isabella.hall@example.com', '222-333-4444');
 
 -- Data untuk tabel orders
-INSERT INTO orders (status, total) VALUES ('unpaid', 0);
+INSERT INTO orders (customer_id, status, total) VALUES (5, 'paid', 0);
 SET @order_id = LAST_INSERT_ID();
 
 -- Data untuk tabel order_details
 INSERT INTO order_details (order_id, product_id, quantity, price, subtotal) VALUES
-(@order_id, 4, 1, 120000, 120000),     
-(@order_id, 5, 2, 80000, 160000),      
-(@order_id, 6, 1, 15000, 15000);  
+(@order_id, 2, 1, 150000, 300000),     
+(@order_id, 12, 2, 180000, 360000),      
+(@order_id, 6, 5, 15000, 75000);  
