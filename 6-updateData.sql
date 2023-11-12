@@ -45,4 +45,4 @@ SET total = (
     FROM order_details od
     WHERE od.order_id = o.id
 )
-WHERE o.id = 2; -- Ganti 1 dengan ID pesanan yang ingin Anda update
+WHERE o.id = 2; 

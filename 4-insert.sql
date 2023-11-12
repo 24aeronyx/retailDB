@@ -62,3 +62,10 @@ INSERT INTO customer (name, address, email, contact) VALUES
 
 -- Data untuk tabel orders
 INSERT INTO orders (status, total) VALUES ('unpaid', 0);
+SET @order_id = LAST_INSERT_ID();
+
+-- Data untuk tabel order_details
+INSERT INTO order_details (order_id, product_id, quantity, price, subtotal) VALUES
+(@order_id, 4, 1, 120000, 120000),     
+(@order_id, 5, 2, 80000, 160000),      
+(@order_id, 6, 1, 15000, 15000);  
