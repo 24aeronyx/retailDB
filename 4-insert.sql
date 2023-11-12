@@ -59,3 +59,6 @@ INSERT INTO customer (name, address, email, contact) VALUES
 ('Mia Clark', '852 Redwood Avenue, Hamletville', 'mia.clark@example.com', '777-888-9999'),
 ('Ethan Wright', '753 Pinecone Road, Boroughville', 'ethan.wright@example.com', '999-111-0000'),
 ('Isabella Hall', '456 Oak Avenue, Townsville', 'isabella.hall@example.com', '222-333-4444');
+
+-- Data untuk tabel orders
+INSERT INTO orders (status, total) VALUES ('unpaid', 0);
