@@ -1,4 +1,6 @@
 -- Active: 1699795418222@@127.0.0.1@3306@retail
+
+-- Nominal rata-rata transaksi yang dilakukan oleh pelanggan dalam 1 bulan terakhir.
 SELECT
     c.id AS customer_id,
     c.name AS customer_name,

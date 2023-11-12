@@ -1,4 +1,7 @@
 -- Active: 1699795418222@@127.0.0.1@3306@retail
+
+-- 1 pelanggan membeli 3 barang yang berbeda.
+
 -- Menyisipkan data ke dalam tabel orders (membuat pesanan baru)
 INSERT INTO orders (status, total) VALUES ('paid', 0);
 

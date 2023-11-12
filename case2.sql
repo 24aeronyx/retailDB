@@ -1,4 +1,6 @@
 -- Active: 1699795418222@@127.0.0.1@3306@retail
+
+-- Melihat 3 produk yang paling sering dibeli oleh pelanggan.
 SELECT
     b.id AS product_id,
     b.name AS product_name,
