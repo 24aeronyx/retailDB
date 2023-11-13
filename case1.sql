@@ -3,7 +3,7 @@
 -- 1 pelanggan membeli 3 barang yang berbeda.
 
 -- Menyisipkan data ke dalam tabel orders (membuat pesanan baru)
-INSERT INTO orders (status, total) VALUES ('paid', 0);
+IINSERT INTO orders (customer_id, status, total) VALUES (5, 'paid', 0);
 
 -- Mengambil ID pesanan yang baru saja dibuat
 SET @order_id = LAST_INSERT_ID();
